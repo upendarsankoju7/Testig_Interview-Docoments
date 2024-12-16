@@ -1,0 +1,23 @@
+
+
+
+Importance of selenium :
+
+1 . Selenium is a open source software ,free ware
+2 . it supports browser compatibility testing
+3 . Selenium Grid - We can distribute the test case execution among multi node systems
+4 . Parallel tests execution
+5.  getting of external data from excel,csv,notepad is very easy in selenium java
+6.  Test results are very accurate, saves time , budget for the client
+
+
+Install Selenium
+
+1. Eclipse            --> editor to write selenium java programs
+2. Webdriver.exe      --> driver.commands will be passed to chrome browser
+3. Java & TestNG     ---> supporting library softwares
+4. Browsers - Chrome,edge,Firefox
+
+
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
