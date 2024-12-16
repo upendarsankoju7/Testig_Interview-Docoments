@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+
+
+
+
+</style>
+
+<style> 
+#example1 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
+}
+
+#example2 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
+
+#example3 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px red;
+}
+</style>
+
+
+<style>
+.btn-group button {
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+
+.btn-group1 button {
+  background-color: #fefbd8; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: black; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+</style>
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+
+</style>
+
+
+</head>
+<body>
+
+
+
+<h1>IMP DOCS<h1>
+
+
+
+
+
+<div class="btn-group" style="width:100%">
+<button style="width:20%;background-color:black;color:white"   onclick="openCity(event, 'Collections in Java')" >Collections in Java</button>
+
+ <button style="width:20%" onclick="openCity(event, 'Selenium Webdriver Interface Hierarchy')" >Pending</button>
+ 
+  <button style="width:20%;background-color:blue;color:white" onclick="openCity(event, 'Exception Hierarchy')">Types of Exceptions</button>
+       <button style="width:20%;background-color:black;color:white"    onclick="openCity(event, 'Selenium Exceptions')">Selenium Exceptions</button>
+
+     <button style="width:20%;background-color:black;color:white"  onclick="openCity(event, 'Agile Scrum')">Agile Scrum</button>
+</div>
+
+
+<div class="btn-group1" style="width:100%">
+<button style="width:20%;background-color:red;color:white"    onclick="openCity(event, 'WDA')" >Web Driver Architecture</button>
+   <button style="width:20%"   onclick="openCity(event, 'HashMap')">How hash map works internally</button>
+  <button style="width:20%;background-color:red;color:white"onclick="openCity(event, 'Exception Handling')">Exception Handling</button>
+      <button style="width:20%;background-color:black;color:white"  onclick="openCity(event, 'Selenium Challanges')">Selenium Challanges</button>
+  <button style="width:20%;background-color:black;color:white"  onclick="openCity(event, 'OOPS')" >OOPS</button>
+</div>
+
+
+
+
+<div class="btn-group" style="width:100%">
+<button style="width:20%;background-color:blue;color:white"  onclick="openCity(event, 'Maven Project')" >Maven Project</button>
+ <button style="width:20%"   onclick="openCity(event, 'Project_Abstraction')" >Abstraction</button>
+  <button style="width:20%;background-color:blue;color:white"onclick="openCity(event, 'Manual Testing Challanges')">Manual Testing Challanges</button>
+
+   <button style="width:20%;background-color:black;color:white" onclick="openCity(event, 'Selenium 4 Features')" >Selenium 4 Features</button>
+   <button style="width:20%;background-color:black;color:white"   onclick="openCity(event, 'BDD')" >BDD Framework</button>
+</div>
+
+
+
+
+<div class="btn-group1" style="width:100%">
+
+ <button style="width:20%;background-color:red;color:white"onclick="openCity(event, 'Maven Life Cycle')">Maven Life Cycle</button>
+  <button style="width:20%" onclick="openCity(event, 'Dynamic WebElements')">Pending</button>
+<button style="width:20%;background-color:black;color:white"  onclick="openCity(event, 'Command Prompt')" >Command Prompt</button>
+<button style="width:20%;background-color:purple;color:white" onclick="openCity(event, 'TDD_BDD')" >TDD vs  BDD </button>
+
+    <button style="width:20%;background-color:black;color:white"   onclick="openCity(event, 'BDD_Folder')" >BDD Folder Stracture</button>
+</div>
+
+
+<div class="btn-group" style="width:100%">
+   <button style="width:20%" onclick="openCity(event, 'Selenium Webdriver Interface Hierarchy')" >Selenium Webdriver Interface Hierarchy</button>
+  <button style="width:20%" onclick="openCity(event, 'datatype')">data taype</button>
+<button style="width:20%"   onclick="openCity(event, 'Character_Methods')" >Character_Methods</button>
+ <button style="width:20%;background-color:black;color:white"  onclick="openCity(event, 'Data Driven Framework')">Data Driven Framework</button>
+  
+   
+   <button style="width:20%;background-color:black;color:white" onclick="openCity(event, 'Hybrid Framework')" >Hybrid Framework</button>
+</div>
+
+
+
+
+<div id="Data Driven Framework" class="tabcontent">
+<br><br>
+<img src="EXCEL1.png" alt="Get vs Naviagte"><hr>
+<img src="EXCEL2.png" alt="Get vs Naviagte"><hr>
+<img src="EXCEL4.png" alt="Get vs Naviagte"><hr>
+<img src="EXCEL3.png" alt="Get vs Naviagte"><hr>
+<img src="EXCEL5.png" alt="Get vs Naviagte"><hr>
+<img src="EXCEL6.png" alt="Get vs Naviagte"><hr>
+<img src="EXCEL7.png" alt="Get vs Naviagte"><hr>
+</div>
+
+<div id="Character_Methods" class="tabcontent">
+<br><br>
+<img src="Character_Methods.png" alt="Get vs Naviagte">
+</div>
+
+
+<div id="datatype" class="tabcontent">
+<br><br>
+<img src="datatype.png" alt="Get vs Naviagte">
+</div>
+
+
+
+<div id="TDD_BDD" class="tabcontent">
+<br><br>
+<p> TDD - Test Driven Development approach ;  BDD - Behaviour driven development approach </p>
+<img src="tdd0.png" alt="Get vs Naviagte">
+<img src="tdd1.png" alt="Get vs Naviagte">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="Command Prompt" class="tabcontent">
+
+<img src="COM13.png" alt="Get vs Naviagte">
+<img src="COM11.png" alt="Get vs Naviagte">
+<img src="COM12.png" alt="Get vs Naviagte">
+
+<hr>
+<img src="COM1.png" alt="Get vs Naviagte"><hr>
+<img src="COM2.png" alt="Get vs Naviagte">
+<img src="COM3.png" alt="Get vs Naviagte"><hr>
+<img src="COM5.png" alt="Get vs Naviagte">
+<img src="COM4.png" alt="Get vs Naviagte">
+<img src="COM6.png" alt="Get vs Naviagte"><hr>
+<img src="COM7.png" alt="Get vs Naviagte">
+<img src="COM8.png" alt="Get vs Naviagte">
+</div>
+
+
+
+<div id="BDD_Folder" class="tabcontent">
+<img src="BDD_Folder1.png" alt="Get vs Naviagte">
+<img src="BDD_Folder2.png" alt="Get vs Naviagte">
+<img src="BDD_Folder3.png" alt="Get vs Naviagte">
+<img src="BDD_Folder4.png" alt="Get vs Naviagte">
+<img src="BDD_Folder5.png" alt="Get vs Naviagte">
+</div>
+
+
+
+
+<div id="Dynamic WebElements" class="tabcontent">
+<img src="SeleniumChallanges_013.png" alt="Get vs Naviagte">
+</div>
+
+
+<div id="Project_Abstraction" class="tabcontent">
+<img src="OOPS1.png" alt="Get vs Naviagte">
+<img src="OOPS2.png" alt="Get vs Naviagte">
+<img src="OOPS3.png" alt="Get vs Naviagte"><hr>
+<img src="Abstraction1_Project.png" alt="Get vs Naviagte"><hr>
+<img src="Abstraction2_Project.png" alt="Get vs Naviagte"><hr>
+<img src="Abstraction3_Project.png" alt="Get vs Naviagte"><hr>
+<img src="Abstraction4_Project.png" alt="Get vs Naviagte"><hr>
+<img src="Abstraction5_Project.png" alt="Get vs Naviagte"><hr>
+</div>
+
+
+
+<div id="Selenium Webdriver Interface Hierarchy" class="tabcontent">
+<img src="SC1.png" alt="Get vs Naviagte"><hr>
+<img src="SC3.png" alt="Get vs Naviagte"><hr>
+<img src="SC2.png" alt="Get vs Naviagte"><hr>
+<img src="SC4.png" alt="Get vs Naviagte"><hr>
+<img src="SC5.png" alt="Get vs Naviagte"><hr>
+</div>
+
+
+
+
+
+
+
+
+<div id="WDA" class="tabcontent">
+<img src="ARCH1.png" alt="Get vs Naviagte"><hr>
+<br><br>
+<h4> 
+WebDriver in Selenium 4 is fully W3C compliant!
+All the browsers and the browser drivers in Selenium architecture follow W3C .</h4> 
+<h4>Selenium 4 WebDriver was made W3C compliant to make the communication easy and direct between the client libraries and the browser drivers. Improved communication led to more stability.</h4> 
+<h5> W3C stands for the World Wide Web Consortium, an international community that develops and maintains standards and guidelines for the World Wide Web. The main aim of the W3C is to ensure the long-term growth and interoperability of the Web.</h5>
+<h5>It creates open standards and specifications that promote compatibility and consistency across various web technologies and platforms. And when we say Selenium 4 is W3C compliant it states that Selenium adheres to the standards and specifications laid by the W3C for web automation.</h5> 
+<img src="ARCH2.png" alt="Get vs Naviagte"><hr>
+</div>
+
+
+<div id="BDD" class="tabcontent">
+<img src="BDD001.png" alt="Get vs Naviagte"><hr>
+<img src="BDD002.png" alt="Get vs Naviagte"><hr>
+<img src="BDD003.png" alt="Get vs Naviagte"><hr>
+<img src="BDD004.png" alt="Get vs Naviagte"><hr>
+<img src="BDD005.png" alt="Get vs Naviagte"><hr>
+<img src="BDD006.png" alt="Get vs Naviagte"><hr>
+<img src="BDD007.png" alt="Get vs Naviagte"><hr>
+<img src="BDD008.png" alt="Get vs Naviagte"><hr>
+<img src="BDD009.png" alt="Get vs Naviagte"><hr>
+<img src="BDD010.png" alt="Get vs Naviagte"><hr>
+<img src="BDD011.png" alt="Get vs Naviagte"><hr>
+<img src="BDD012.png" alt="Get vs Naviagte"><hr>
+</div>
+
+
+
+<div id="Agile Scrum" class="tabcontent">
+<img src="AGILE001.png" alt="Get vs Naviagte"><hr>
+<img src="AGILE002.png" alt="Get vs Naviagte"><hr>
+<img src="AGILE003.png" alt="Get vs Naviagte"><hr>
+<img src="AGILE004.png" alt="Get vs Naviagte"><hr>
+<img src="AGILE005.png" alt="Get vs Naviagte"><hr>
+<img src="AGILE006.png" alt="Get vs Naviagte"><hr>
+<img src="AGILE007.png" alt="Get vs Naviagte"><hr>
+<img src="AGILE008.png" alt="Get vs Naviagte"><hr>
+</div>
+
+
+<div id="Selenium Challanges" class="tabcontent">
+<img src="SeleniumChallanges_008.png" alt="Get vs Naviagte">
+<img src="SeleniumChallanges_009.png" alt="Get vs Naviagte">
+<img src="SeleniumChallanges_010.png" alt="Get vs Naviagte"><hr>
+
+<img src="SeleniumChallanges_002.png" alt="Get vs Naviagte"><hr>
+<img src="SeleniumChallanges_001.png" alt="Get vs Naviagte"><hr>
+<img src="SeleniumChallanges_003.png" alt="Get vs Naviagte"><hr>
+<img src="SeleniumChallanges_004.png" alt="Get vs Naviagte"><hr>
+<img src="SeleniumChallanges_005.png" alt="Get vs Naviagte">
+<img src="SeleniumChallanges_006.png" alt="Get vs Naviagte">
+<img src="SeleniumChallanges_007.png" alt="Get vs Naviagte"><hr>
+
+</div>
+
+<div id="Selenium Exceptions" class="tabcontent">
+<img src="SeleniumExceptions_001.png" alt="Get vs Naviagte"><hr>
+<img src="SeleniumExceptions_002.png" alt="Get vs Naviagte"><hr>
+<img src="SeleniumExceptions_003.png" alt="Get vs Naviagte"><hr>
+<img src="SeleniumExceptions_004.png" alt="Get vs Naviagte"><hr>
+<img src="SeleniumExceptions_005.png" alt="Get vs Naviagte"><hr>
+<img src="SeleniumExceptions_006.png" alt="Get vs Naviagte"><hr>
+<img src="SeleniumExceptions_007.png" alt="Get vs Naviagte"><hr>
+<img src="SeleniumExceptions_008.png" alt="Get vs Naviagte"><hr>
+<img src="SeleniumExceptions_009.png" alt="Get vs Naviagte"><hr>
+<img src="SeleniumExceptions_010.png" alt="Get vs Naviagte"><hr>
+<img src="SeleniumExceptions_011.png" alt="Get vs Naviagte"><hr>
+</div>
+
+
+<div id="OOPS" class="tabcontent">
+<img src="OOPS8.png" alt="Get vs Naviagte"><hr>
+<img src="OOPS9.png" alt="Get vs Naviagte">
+<img src="Abstraction1_Project.png" alt="Get vs Naviagte"><hr>
+<img src="OOPS4.png" alt="Get vs Naviagte"><hr>
+<img src="OOPS5.png" alt="Get vs Naviagte"><hr>
+<img src="OOPS6.png" alt="Get vs Naviagte"><hr>
+</div>
+
+<div id="Collections in Java" class="tabcontent">
+<img src="Collections1.png" alt="Get vs Naviagte"><hr>
+<img src="Collections2.png" alt="Get vs Naviagte"><hr>
+<img src="Collections3.png" alt="Get vs Naviagte"><hr>
+</div>
+
+
+
+<div id="Exception Handling" class="tabcontent">
+<img src="ExceptionHandling1.png" alt="Get vs Naviagte">
+<img src="ExceptionHandling2.png" alt="Get vs Naviagte">
+</div>
+
+
+<div id="Exception Hierarchy" class="tabcontent">
+<img src="ExceptionHierarchy1.png" alt="Get vs Naviagte">
+<img src="ExceptionHierarchy2.png" alt="Get vs Naviagte">
+<img src="ExceptionHierarchy3.png" alt="Get vs Naviagte">
+<img src="ExceptionHierarchy4.png" alt="Get vs Naviagte">
+<img src="ExceptionHierarchy5.png" alt="Get vs Naviagte">
+</div>
+
+<div id="HashMap" class="tabcontent">
+<img src="HashMap01.png" alt="Get vs Naviagte">
+<img src="HashMap02.png" alt="Get vs Naviagte">
+<img src="HashMap03.png" alt="Get vs Naviagte">
+<img src="HashMap04.png" alt="Get vs Naviagte">
+</div>
+
+
+<div id="Maven Project" class="tabcontent">
+<img src="MavenProject1.png" alt="Get vs Naviagte">
+<img src="MavenProject2.png" alt="Get vs Naviagte">
+<img src="MavenProject6.png" alt="Get vs Naviagte">
+<img src="MavenProject7.png" alt="Get vs Naviagte">
+<img src="MavenProject3.png" alt="Get vs Naviagte">
+<img src="MavenProject4.png" alt="Get vs Naviagte">
+<img src="MavenProject5.png" alt="Get vs Naviagte">
+</div>
+
+<div id="Maven Life Cycle" class="tabcontent">
+<img src="MavenLife1.png" alt="Get vs Naviagte">
+<img src="MavenLife2.png" alt="Get vs Naviagte">
+<img src="MavenLife3.png" alt="Get vs Naviagte">
+<img src="MavenLife4.png" alt="Get vs Naviagte">
+<img src="MavenLife5.png" alt="Get vs Naviagte">
+<img src="MavenLife6.png" alt="Get vs Naviagte">
+<img src="MavenLife7.png" alt="Get vs Naviagte">
+</div>
+
+<div id="Selenium 4 Features" class="tabcontent">
+<img src="Selenium4_01.png" alt="Get vs Naviagte">
+<img src="Selenium4_02.png" alt="Get vs Naviagte">
+<img src="Selenium4_03.png" alt="Get vs Naviagte">
+<img src="Selenium4_04.png" alt="Get vs Naviagte">
+<img src="Selenium4_05.png" alt="Get vs Naviagte">
+<img src="Selenium4_06.png" alt="Get vs Naviagte">
+<img src="Selenium4_07.png" alt="Get vs Naviagte">
+<img src="Selenium4_08.png" alt="Get vs Naviagte">
+</div>
+
+
+
+<div id="Hybrid Framework" class="tabcontent">
+<img src="Hybrid1.png" alt="Get vs Naviagte">
+<img src="Hybrid2.png" alt="Get vs Naviagte">
+<img src="Hybrid3.png" alt="Get vs Naviagte">
+<img src="Hybrid4.png" alt="Get vs Naviagte">
+<img src="Hybrid5.png" alt="Get vs Naviagte">
+<img src="Hybrid6.png" alt="Get vs Naviagte">
+<img src="Hybrid7.png" alt="Get vs Naviagte">
+</div>
+
+
+
+<div id="Manual Testing Challanges" class="tabcontent">
+
+<br><br><br><br>
+<br><br>
+
+
+<h4>Our project we are following Agile Scrum methodology. Because of frequent requirement and design changes So, we have to get ready with test scenarios and test cases within short span of time. Because of short span of time window limit, there might be a chance for few of the functional coverages will be missed.</h4> <br>
+
+<h4>Sometimes the requirement documents are not clear, and it could be one line or two lines statements .In such cases, we have to more closely work with BA and design team to get more information about the new user stories testing. And we also need to closely work with BA & Design Team to Close all query log tracker issues.</h4> <br>
+
+<h4>Because of Agile methodology sometimes there could be requirement changed completely and also short span of Sprint timelines, we have to test the system on fly.  sometimes we have to go with the exploratory testing technique. So, quality of the testing will be impacted in each phase of requirement analysis, test scenario preparation, test execution and test closure phases. </h4> <br>
+
+<h4>Some of the defects which cannot be accepted by any of the teams. So, we have to take initiative and we have to drive those defects by closely working with B A-Team design team. Development team and support team. </h4> <br>
+
+<h4>Sometimes developer will not agree the defects and he can reject the defects. We have to set up with meeting with the concern teams. And we have to sort out the gaps. And we have to follow up the defect until it comes for closure. </h4> <br>
+
+<h4>Sometimes application performance or environments are very slow. So we cannot be able to complete test execution on time. So, in those cases, we have to think about alternative environment deployments.</h4>  
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
